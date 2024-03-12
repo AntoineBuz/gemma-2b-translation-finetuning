@@ -10,12 +10,12 @@ This is relevant in VRAM-limited environment as this is lightweight.
 - **Gemma access** : One needs a granted access to Gemma models. This can be done [accepting Google terms of use](https://huggingface.co/google/gemma-2b).
 - **Gemma-2B-pretrained model** : Get a local [copy of the model](https://huggingface.co/google/gemma-2b) or import it with HuggingFace library.
 - **Data** : The [opus-books (en-fr) dataset](https://huggingface.co/datasets/opus_books/tree/main/en-fr) can be found in the HuggingFace hub.
-- **GPU** : I made the model fit (during training - see batch_size below) in a RTX3080 (10GB VRAM)
+- **GPU** : I made the model fit (during training - see batch_size in `finetuning.ipynb`) in a RTX3080 (10GB VRAM)
 - **Required packages** : Required packages can be installed with the given `requirements.txt`
 
-## Dataset : `opus_books`
+## &#128193; Dataset : `opus_books`
 
-For this project we will be using an en-fr corpus taken from the HuggingFace hub.It is made of roughly 130k couples of en-fr translations.
+For this project we will be using an en-fr corpus taken from the HuggingFace hub. It is made of roughly 130k couples of en-fr translations.
 
 |     | **English**                                                                                            | **French**                                                                                           |
 |-----|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@ For this project we will be using an en-fr corpus taken from the HuggingFace hub
 
 ## &#128201; Some results
 
-After a training of roughly 5 hours I have already been able to notice interesting results.
+After a 5 hours long training, I have already been able to notice interesting results.
 
 - **Here is the loss curve I have got**
 
